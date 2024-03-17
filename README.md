@@ -1,1 +1,1 @@
-# Vanilla-Gandalf-Portfolio.github.io
+# Vanilla-Gandalf-Portfolio
