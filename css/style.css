@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --principal-color: #0a1606;
+  --title-text-border-color: white;
+  --margin-base: 2svh;
+  --padding-base: 2svh;
+  --standard-font-size: 2.5svh;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Philosopher", sans-serif;
+}
+
+.site-header__nav {
+  height: 12svh;
+  background-color: var(--principal-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1svh 2svh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100svw;
+  z-index: 1000;
+  border-bottom: 1px solid var(--title-text-border-color);
+}
+
+.site-header__link-logo {
+  height: 7svh;
+}
+
+.site-header__logo {
+  height: 100%;
+}
+
+.site-header__link-contact,
+.site-header__button-menu {
+  color: var(--title-text-border-color);
+  text-decoration: none;
+  font-size: 3svh;
+  border: 1px solid var(--title-text-border-color);
+  border-radius: 0.75rem;
+  background-color: var(--principal-color);
+  padding: 1svh;
+  transition: all 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+.site-header__menu {
+  font-size: 3svh;
+  border: 1px solid var(--title-text-border-color);
+  border-radius: 0.75rem;
+  padding: 0 1svh;
+  transition: all 0.3s;
+  width: 20svh;
+  background-color: var(--principal-color);
+  margin-top: 26lvh;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: var(--title-text-border-color);
+  display: block;
+  text-align: center;
+  margin: 1svh;
+  padding: 0.5svh;
+}
+
+.menu-link:hover {
+  background-color: #727e47;
+  margin: 1svh -1svh;
+}
+
+.site-header__link-contact:hover,
+.experience-detail__less:hover,
+.experience-detail__more:hover,
+.contact-form__button:hover,
+.site-header__button-menu:hover {
+  background-color: #727e47;
+  cursor: pointer;
+}
+
+.main-container__homepage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12svh;
+}
+
+.homepage-welcome {
+  height: 51svh;
+  background-image: url("/pictures/Gandalf_background.webp");
+  background-size: cover;
+}
+
+.homepage-welcome__title {
+  font-size: 8svh;
+  padding: 12svh 2svh 0 40svw;
+  text-align: center;
+  text-shadow: white 0 0 10px;
+  color: var(--principal-color);
+  line-height: 8svh;
+}
+
+.homepage-welcome__subtitle {
+  display: inline-block;
+  font-size: 3.5svh;
+  line-height: 3.5svh;
+  text-align: center;
+  width: 50%;
+  font-weight: bold;
+}
+
+.homepage-about {
+  height: 37svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--principal-color);
+  background-image: url(/pictures/output-onlinepngtools-modified.png);
+  background-repeat: no-repeat;
+  background-position: 50% 48%;
+  background-size: 3lvh;
+  padding: 4svh 0;
+}
+
+.homepage-about__description {
+  font-size: 2.2lvh;
+  color: var(--title-text-border-color);
+}
+
+.homepage-about__description--first {
+  margin: 0 15% 0 2svh;
+}
+
+.homepage-about__description--second {
+  margin: 0 2svh 0 15%;
+  height: calc(8svh - 1px);
+}
+
+.main-container__skills,
+.main-container__experience,
+.main-container__formation,
+.main-container__contact {
+  background-image: url("/pictures/fondskill.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-container__separation {
+  height: 12svh;
+}
+
+.skills-detail__description {
+  margin: var(--margin-base);
+  padding: 2svh 2svh 2svh 12svh;
+  background-size: 8svh;
+  background-repeat: no-repeat;
+  background-position: 2svh 7svh;
+  background-color: var(--principal-color);
+  border: 1px solid var(--title-text-border-color);
+  border-radius: 1rem;
+}
+
+.skills-detail__description--magie-puissante {
+  background-image: url(/pictures/4154168-200-modified.png);
+  margin-top: 12svh;
+}
+.skills-detail__description--conseil-strategique {
+  background-image: url(/pictures/cerveau-modified.png);
+}
+.skills-detail__description--langues {
+  background-image: url(/pictures/traduire-modified.png);
+}
+.skills-detail__description--combat-magique {
+  background-image: url(/pictures/feu-modified.png);
+}
+.skills-detail__description--sagesse {
+  background-image: url(/pictures/livre-ouvert-modified.png);
+}
+
+.skills-detail__description-title {
+  color: var(--title-text-border-color);
+  text-align: center;
+  font-size: 3.5svh;
+  font-weight: bold;
+  margin-bottom: var(--margin-base);
+  margin-left: -12svh;
+  border-bottom: 1px solid var(--title-text-border-color);
+}
+
+.description-text__title,
+.experience-detail__infos-title {
+  font-weight: bold;
+  color: var(--title-text-border-color);
+}
+
+#experience-title,
+#formation-title,
+#contact-title,
+#skills-title {
+  padding: 2svh 0;
+  font-size: 5svh;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--title-text-border-color);
+  text-align: center;
+  background-color: var(--principal-color);
+  border-left: 1px solid var(--title-text-border-color);
+  border-right: 1px solid var(--title-text-border-color);
+  border-bottom: 1px solid var(--title-text-border-color);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: sticky;
+  top: 12svh;
+}
+
+.main-container__formation .formation-detail:nth-child(2),
+.main-container__contact .contact-detail:nth-child(2),
+.main-container__experience .experience-detail:nth-child(2),
+.skills-detail__description--magie-puissante {
+  margin-top: 12svh;
+}
+
+#skills-title {
+  border: 1px solid var(--title-text-border-color);
+}
+
+.experience-detail {
+  margin: var(--margin-base);
+  min-height: 20svh;
+  padding: var(--padding-base);
+  background-color: var(--principal-color);
+  border: 1px solid var(--title-text-border-color);
+  border-radius: 1rem;
+  display: flex;
+  color: var(--title-text-border-color);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-detail__title {
+  font-size: 3.5svh;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: var(--margin-base);
+  border-bottom: 1px solid var(--title-text-border-color);
+}
+
+.experience-detail__infos-subtitle,
+.experience-detail__infos-text,
+.skills-detail__description-text {
+  color: var(--title-text-border-color);
+  font-size: 1.6svh;
+  display: inline-block;
+  margin-bottom: var(--margin-base);
+}
+
+.experience-detail__more,
+.experience-detail__less {
+  color: var(--title-text-border-color);
+  text-decoration: none;
+  font-size: 3svh;
+  border: 1px solid var(--title-text-border-color);
+  border-radius: 0.75rem;
+  background-color: var(--principal-color);
+  padding: 1svh;
+  margin-top: var(--margin-base);
+  transition: all 0.3s;
+}
+
+.formation-detail {
+  margin: 2svh 2svh 0 2svh;
+  padding: var(--padding-base);
+  background-color: var(--principal-color);
+  border: 1px solid var(--title-text-border-color);
+  border-radius: 1rem;
+}
+
+.formation-detail__title {
+  font-size: 3.5svh;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid var(--title-text-border-color);
+  margin-bottom: 1svh;
+  color: var(--title-text-border-color);
+}
+
+.formation-detail__subtitle {
+  font-size: var(--standard-font-size);
+  font-style: italic;
+  font-weight: bold;
+  color: var(--title-text-border-color);
+}
+
+.formation-detail__duration {
+  font-size: 2svh;
+  font-style: italic;
+  display: inline-block;
+  margin-bottom: var(--margin-base);
+  color: var(--title-text-border-color);
+}
+
+.formation-detail__description {
+  color: var(--title-text-border-color);
+  font-size: 1.6svh;
+}
+
+.contact-detail {
+  margin: var(--margin-base);
+  padding: var(--padding-base);
+  background-color: var(--principal-color);
+  border: 1px solid var(--title-text-border-color);
+  border-radius: 1rem;
+}
+
+.contact-detail__title {
+  font-size: 3.5svh;
+  text-align: center;
+  margin-bottom: var(--margin-base);
+  border-bottom: 1px solid var(--title-text-border-color);
+  color: var(--title-text-border-color);
+}
+
+.contact-detail__container-address {
+  background-image: url(/pictures/icons8-adresse-100.png);
+  background-repeat: no-repeat;
+  background-size: 5svh;
+  background-position: 0 50%;
+  padding-left: 6.5svh;
+  margin-bottom: var(--margin-base);
+  color: var(--title-text-border-color);
+}
+
+.contact-detail__address {
+  font-size: var(--standard-font-size);
+}
+
+.contact-detail__container-email {
+  background-image: url(/pictures/icons8-courrier-100.png);
+  background-repeat: no-repeat;
+  background-size: 5svh;
+  background-position: 0 50%;
+  padding-left: 6.5svh;
+  margin-bottom: var(--margin-base);
+  line-height: 5svh;
+  display: block;
+}
+
+.contact-detail__email {
+  font-size: var(--standard-font-size);
+  text-decoration: none;
+  color: var(--title-text-border-color);
+}
+
+.contact-detail__container-phone {
+  background-image: url(/pictures/icons8-téléphone-100.png);
+  background-repeat: no-repeat;
+  background-size: 5svh;
+  background-position: 0 50%;
+  padding-left: 6.5svh;
+  line-height: 5svh;
+  display: block;
+}
+
+.contact-detail__phone {
+  font-size: var(--standard-font-size);
+  text-decoration: none;
+  color: var(--title-text-border-color);
+}
+
+.contact-social {
+  margin: var(--margin-base);
+  padding: var(--padding-base);
+  background-color: var(--principal-color);
+  border: 1px solid var(--title-text-border-color);
+  border-radius: 1rem;
+}
+
+.contact-social__title,
+.contact-form__title {
+  text-align: center;
+  font-size: 3.5svh;
+  margin-bottom: 2svh;
+  border-bottom: 1px solid var(--title-text-border-color);
+  color: var(--title-text-border-color);
+}
+
+.contact-social__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-social__container-instagram,
+.contact-social__container-linkedin,
+.contact-social__container-facebook {
+  padding-top: 9svh;
+  background-size: 7svh;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+.contact-social__container-instagram {
+  background-image: url(/pictures/instagram_black_logo_icon_147122-modified.png);
+}
+.contact-social__container-linkedin {
+  background-image: url(/pictures/sociallinkedin_member_30-modified.png);
+}
+
+.contact-social__container-facebook {
+  background-image: url(/pictures/png-clipart-facebook-computer-icons-logo-black-and-white-rectangle-logo-thumbnail-modified.png);
+}
+.contact-social__instagram,
+.contact-social__linkedin,
+.contact-social__facebook {
+  color: var(--title-text-border-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--standard-font-size);
+}
+
+.contact-form {
+  margin: 2svh 2svh 0 2svh;
+  padding: var(--padding-base);
+  background-color: var(--principal-color);
+  border: 1px solid var(--title-text-border-color);
+  border-radius: 1rem;
+  color: var(--title-text-border-color);
+}
+
+.contact-form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2svh;
+}
+
+.contact-form__label {
+  display: block;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  margin-bottom: 2svh;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.contact-form__input {
+  height: 3svh;
+}
+
+.contact-form__button {
+  background: var(--principal-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--title-text-border-color);
+  text-align: center;
+  display: block;
+  padding: 2svh 2.5svh;
+  margin: 2svh auto;
+  color: var(--title-text-border-color);
+  font-size: var(--standard-font-size);
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.footer__legal-notice {
+  font-size: 2svh;
+  color: grey;
+  background-color: transparent;
+  text-align: center;
+}
